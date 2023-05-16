@@ -19,7 +19,7 @@ export default {
         handle() {
             console.log('1')
             setTimeout(() => {
-                router.push({path: "/"})
+                router.push({path: "/tip"})
             }, 1000)
         },
         clear(){
@@ -97,6 +97,26 @@ export default {
 </template>
 
 <style scoped>
+
+.form{
+    width: 500px;
+}
+
+@media only screen and (max-width: 500px) {
+    .form{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .form{
+        width: 350px;
+    }
+
+    .radio-wrap{
+        flex-direction: column;
+    }
+}
 .main{
     width: 100%;
     display: flex;
@@ -142,7 +162,7 @@ input[type="text"]{
     border: 2px solid indigo;
     padding: 4px;
     border-radius: 20px;
-    width: 400px;
+    width: calc(100% - 8px);
 }
 
 .error-message{

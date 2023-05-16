@@ -110,6 +110,7 @@ export default defineComponent({
       background-color: transparent;
       font-weight: bold;
       transition: 0.1s ease-in;
+      margin-bottom: 4rem;
   }
 
   button:hover{
