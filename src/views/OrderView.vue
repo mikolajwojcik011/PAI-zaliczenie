@@ -265,7 +265,7 @@ button:hover{
 
 h1{
     background-color: indigo;
-    width: 100%;
+    width: calc(100% - 8rem);
     text-align: center;
     margin: 0;
     padding: 4rem;
